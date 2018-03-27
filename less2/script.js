@@ -33,8 +33,6 @@ if ((typeof(a)) === 'string' &&  a != '' && a.length < 50 ) {
 }
 }
 
-
-
 // Вариант цикла №2
 // let i = 0;
 // while (i < 5 ){
@@ -67,18 +65,6 @@ if ((typeof(a)) === 'string' &&  a != '' && a.length < 50 ) {
 // 		MainList.shopGoods[2] = c;
 // 		break;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
