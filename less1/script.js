@@ -14,7 +14,6 @@ let MainList = {
 };
 
 
-
 // Вариант цикла №1
 
 for (let i = 0; i < 5; i++) {
@@ -69,20 +68,6 @@ if ((typeof(a)) === 'string' &&  a != '' && a.length < 50 ) {
 // }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if (time < 0 ) {
 	console.log ('Такого просто не может быть');
 } else if (time > 8 && time < 20) {
@@ -94,12 +79,8 @@ if (time < 0 ) {
 }
 
 
-
-
-
 console.log(MainList.Budget);
 console.log(MainList);
-
 
 alert("Ваш бюджет на день\n" + (MainList.Budget/30));
 
