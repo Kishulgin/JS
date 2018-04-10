@@ -3,18 +3,7 @@ let yourBudget,
     time,
     price = 100;
 
-// Функция ввода бюджета и названия
-function start () {
-				yourBudget = prompt('Введите ваш месячный бюджет' , 1000 ); 
-				while (isNaN(yourBudget) || yourBudget === "" || yourBudget === null) {
-		yourBudget = prompt('Введите ваш месячный бюджет' , 1000 ); 
 
-				}
-
-				yourShopName = prompt('Введите название вашего магазина' , "Дети хоронят коня" ).toUpperCase(); 
-				time = 1;
-}
-start();
 
 let MainList = {
 			Budget: yourBudget,
@@ -24,21 +13,7 @@ let MainList = {
 			employers: {},
 			discount: true,
 			shopItems: [],
-			chooseGoods: function chooseGoods() {
-						for (let i = 0; i < 5; i++) {
-						let a = prompt('Введите название вашего товара' , "например" ); 
-						// проверки
-						if ((typeof(a)) === 'string' &&  a !== '' && a.length < 50 ) {
-						 console.log('все вёрно!');
-							MainList.shopGoods[i] = a;
-						} else if ((a) === null)  {
-						 console.log('Нельзя нажимать отмена');
-						 i--;
-						} else {
-						 console.log('лажа какая-то');
-						 i--;
-						}
-						}
+
 },
 workTime: function workTime (time){
 			if (time < 0 ) {
@@ -90,30 +65,7 @@ chooseEmployers: function chooseEmployers() {
 },
 chooseShopItems : function chooseShopItems() {
 
-	 for (let i = 0; i < 1;){
-	 let items = prompt("Перечислите ваши товары через запятую" , "");
-	 if ((typeof(items)) === 'string' &&  items !== '' && items.length < 50 ) {
-						 console.log('все вёрно!');
-						 i++;
-					 		MainList.shopItems = items.split(",");
-								MainList.shopItems.push(prompt("Точно всё?", ""));
-								MainList.shopItems.sort();
-											for( let key in MainList.shopItems) {
-  							console.log ('Наш магазин включает в себя: ' + MainList.shopItems[key]);
-  						}
-								MainList.shopItems.forEach(function(item,q,arr) {
-  						console.log( (q+1) + ": " + item + " (массив:" + arr + ")" );
 
-});
-						} else if ((items) === null)  {
-						 console.log('Нельзя нажимать отмена');
-						 i--;
-						} else {
-						 console.log('лажа какая-то');
-						 i--;
-						}
-
-}
 
 },
 };
@@ -125,7 +77,21 @@ console.log(yourShopName);
 
 
 
-
+			chooseGoods: function chooseGoods() {
+						for (let i = 0; i < 5; i++) {
+						let a = prompt('Введите название вашего товара' , "например" ); 
+						// проверки
+						if ((typeof(a)) === 'string' &&  a !== '' && a.length < 50 ) {
+						 console.log('все вёрно!');
+							MainList.shopGoods[i] = a;
+						} else if ((a) === null)  {
+						 console.log('Нельзя нажимать отмена');
+						 i--;
+						} else {
+						 console.log('лажа какая-то');
+						 i--;
+						}
+						}
 
 
 
