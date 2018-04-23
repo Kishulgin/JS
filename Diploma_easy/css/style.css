@@ -150,7 +150,6 @@
   width: 90px;
   height: 195px;
   margin-right: 30px;
-  background-size: cover;
 }
 
 .main-cards-item .candidate-block .photo-1 {
@@ -433,7 +432,7 @@
   height: 500px;
   margin: 0 auto;
   background: url("../img/construct-1.png") center no-repeat;
-  background-size: 70%;
+  background-size: 70% !important;
 }
 
 .custom-char .person {
@@ -716,4 +715,52 @@ display: none;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+}
+
+.type1{
+  background: #f2f2f2 url("../img/construct-1.png") center no-repeat !important;
+  background-size: 60% !important;
+
+}
+.type2{
+  background: #f2f2f2 url("../img/construct-2.png") center no-repeat !important;
+  background-size: 60% !important;
+
+}
+.type3{
+  background: #f2f2f2 url("../img/construct-3.png") center no-repeat !important; 
+  background-size: 60% !important;
+
+}
+.type4{
+  background: #f2f2f2 url("../img/construct-4.png") center no-repeat !important; 
+  background-size: 60% !important;
+
+}
+
+.type11{
+  background: #f2f2f2 url("../img/construct-5.png") center no-repeat !important;
+  background-size: 70% !important;
+}
+.type12{
+  background: #f2f2f2 url("../img/construct-6.png") center no-repeat !important;
+  background-size: 70% !important;
+}
+.type13{
+  background: #f2f2f2 url("../img/construct-7.png") center no-repeat !important;
+  background-size: 70% !important;
+}
+.type14{
+  background: #f2f2f2 url("../img/construct-8.png") center no-repeat !important;
+  background-size: 70% !important;
+}
+
+.photo-3 {
+  background-size: 90%!important;
+
+}
+
+.photo-4 {
+  background-size: 75%!important;
+
 }

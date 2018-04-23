@@ -29,6 +29,36 @@
 				Биография
 				<div class="bio">13 декабря 2016 года объявил, что намерен баллотироваться на президентских выборах 2018 года, опубликовал основные положения своей предвыборной программы и начал собирать сторонников</div>
 			</div>
+			<!-- my candidat -->
+			<div id="my-candidat" class="main-cards-item hidden" >
+				<div class="candidate-block">
+					<div id="my-candidat-photo" class="photo photo-3 "></div>
+					<div class="result">
+						<div class="result-count">0%</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-3"></div>
+						</div>
+					</div>
+				</div>
+				<div  id="my-candidat-name" class="name">Забыли указать имя</div>
+				<div id="my-candidat-age" class="age">укажите возраст</div>
+				Пол:
+				<div class="sex">Мужской</div>
+				Полит. взгляды:
+				<div class="views">Либеральные</div>
+				Биография
+				<div id="my-candidat-bio" class="bio">Вы не указали биографию :P</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
 			<div class="main-cards-item ">
 				<div class="candidate-block">
 					<div class="photo photo-2"></div>
@@ -71,13 +101,13 @@
 	<div class="custom">
 		<div class="custom-info">
 			<label for="name">Фамилия Имя Отчество</label>
-			<input type="text" id="name">
+			<input  type="text" id="name" onkeyup="var yratext= /['0-9',':','a-z','A-Z']/; if(yratext.test(this.value))this.value = ''" >
 			<label for="age">Возраст, лет</label>
-			<input type="text" id="age">
+			<input  type="text" onkeyup = 'this.value=parseInt(this.value) | 0' id="age">
 			<div class="radio">
 				<input value="Мужской" id="male" checked name="sex" type="radio">
 				<label for="sex">Мужчина</label>
-				<input value="Женский" id="female" name="sex" type="radio">
+				<input value="Женский" id="female"  name="sex" type="radio">
 				<label for="sex">Женщина</label>
 			</div>
 			<select id="select">
